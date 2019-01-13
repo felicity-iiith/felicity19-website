@@ -56,6 +56,10 @@ if (empty($is_ajax)):
             font-family: 'Exo', sans-serif;
             background: url('felicity hero large.png');
         }
+        
+        a {
+            text-decoration: none;
+        }
 
         .container {
             position: absolute;
@@ -70,7 +74,7 @@ if (empty($is_ajax)):
             display: inline-block;
             margin: 0 2vw;
         }
-
+        
         .grid-content {
             background-color: rgba(255, 0, 0, 0.9);
             height: 2%;

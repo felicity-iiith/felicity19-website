@@ -2,6 +2,13 @@
 <html>
 
 <head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="felicity, felicty18, college, fest, threads, pulsation, iiit, iiith, international, institute, information, technology, hyderabad">
+    <meta name="description" content="<?= __("Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.") ?>">
+    <meta property="og:description" content="<?= __("Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.") ?>">
+    <meta property="og:title" content="<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?> · <?= __('IIIT-H') ?>">
+    <meta property="og:image" content="<?= base_url() . (isset($og_image) ? $og_image : 'files/17/poster-17.jpg') ?>" style="z-index: 3">
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     <style>
         * {
@@ -12,6 +19,10 @@
         body {
             font-family: 'Exo', sans-serif;
             background: url('static/images/felicity hero large.png');
+        }
+
+        a {
+            text-decoration: none;
         }
 
         .container {
@@ -55,7 +66,7 @@
 
 <body>
     <div class="container">
-        <div class="grid-item">
+        <a href="/about/" class="grid-item">
             <div class="grid-image">
                 <img src="static/images/about-us-fixed.png" style="max-width: 100%;" />
             </div>
@@ -64,7 +75,7 @@
                 <br />
                 About Us
             </div>
-        </div>
+        </a>
         <div class="grid-item">
             <div class="grid-image">
                 <img src="static/images/dj-night-fixed.png" style="max-width: 100%;" />

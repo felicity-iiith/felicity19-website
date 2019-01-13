@@ -45,6 +45,55 @@ if (empty($is_ajax)):
         var baseUrl = '<?= base_url() ?>';
         var localeBaseUrl = '<?= locale_base_url() ?>';
     </script>
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Exo', sans-serif;
+            background: url('felicity hero large.png');
+        }
+
+        .container {
+            position: absolute;
+            bottom: 1rem;
+        }
+
+        .grid-item {
+            height: 37.5vh;
+            width: 15vw;
+            background-color: #000;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 85% 100%, 0 100%);
+            display: inline-block;
+            margin: 0 2vw;
+        }
+
+        .grid-content {
+            background-color: rgba(255, 0, 0, 0.9);
+            height: 2%;
+            color: #EEEEEE;
+            font-size: 2.5rem;
+            transition: height linear 0.3s;
+            text-align: center;
+            line-height: 0.8;
+        }
+
+        .grid-image img {
+            transition: transform linear 0.2s;
+        }
+
+        .grid-item:hover .grid-image img {
+            transform: scale(1.2);
+        }
+
+        .grid-item:hover .grid-content {
+            height: 100%;
+
+        }
+    </style>
 </head>
 <?php
     if (!isset($page_slug)) {
@@ -52,10 +101,7 @@ if (empty($is_ajax)):
     }
 ?>
 
-<body  style="overflow: hidden;">
-  <div id = "plane" style="z-index: 2000;height: 20%;">
-  <img src = "<?= base_url() ?>static/images/plane_final_crop.png" width = "auto" height ="70%;"><div id="flag" class='flag' style="z-index: 9000;"></div>
-  </div>
+<body style="overflow: hidden;">
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
         <?php if ($is_authenticated): ?>
@@ -69,46 +115,4 @@ if (empty($is_ajax)):
         <?php endif; ?>
     </div>
     <?php endif; ?>
-    <div id="container" class="wrapper" style="z-index: 4;">
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-     <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
-     <button id="menu-toggle" class="toggle-button" >☰</button>
-      <div id="panelcontainer">
-
-          <div class="content-center" style="position: relative;">
-              <div id="felicity-branding" style="top: 45%;z-index:4;">
-                  <img src="<?= base_url() ?>static/images/logo.png" style="display: block; margin: 0 auto; width: 30%;">
-                  <p class="text-landing" style="font-size: 200%;text-shadow: 0 0 2px #000000;">Global Weekend</p>
-                  <br><br>
-                  <p class="text-landing" style="font-size: 150%;text-shadow: 0 0 2px #000000;">January 26 - 28, 2018</p>
-              </div>
-
-
-              <?php $this->load_fragment('globe'); ?>
-              <?php $this->load_fragment('menu'); ?>
-          </div>
-      </div>
-
-      <section id="about" class="about" style="z-index: 4">
-            <div class="cell">
-                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: 5%;" class="cables center accelerate newcsscozwell">
-                    <!-- <div class="linkholder">
-                        <div class="links">
-                            <li><a onclick="showPage('about')">About US</a></li>
-                            <li><a onclick="showPage('events')">Events</a></li>
-                            <li><a onclick="showPage('gallery')">Gallery</a></li>
-                            <li><a onclick="showPage('team')">Team</a></li>
-                            <li><a onclick="showPage('diary')">Felicity Diaries</a></li>
-                            <li><a onclick="showPage('sponsors')">Sponsors</a></li>
-                            <li><a onclick="showPage('contact')">Contact Us</a></li>
-                        </div>
-                    </div> -->
-                    <div class="panel accelerate content-holder" style="height:100%">
-                      <!-- <button id="toggle" class="toggle i" style="display: block; left: 95%; top: 8%;">
-                          <div class="cross">
-                              <div class="x"></div>
-                              <div class="y"></div>
-                          </div>
-                      </button> -->
-      <!-- </section> -->
 <?php endif;

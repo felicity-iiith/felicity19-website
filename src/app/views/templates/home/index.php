@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,7 +17,7 @@
 
         body {
             font-family: 'Exo', sans-serif;
-            background: url('static/images/felicity hero large.png');
+            background: url('/static/images/felicity hero large.png') no-repeat;
         }
 
         a {
@@ -76,7 +75,7 @@
                 About Us
             </div>
         </a>
-        <div class="grid-item">
+        <a href="/events/" class="grid-item">
             <div class="grid-image">
                 <img src="static/images/dj-night-fixed.png" style="max-width: 100%;" />
             </div>
@@ -85,7 +84,7 @@
                 <br />
                 Events
             </div>
-        </div>
+        </a>
         <div class="grid-item">
             <div class="grid-image">
                 <img src="static/images/art-events-fixed.png" style="max-width: 100%;" />

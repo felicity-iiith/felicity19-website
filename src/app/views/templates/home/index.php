@@ -75,7 +75,7 @@
                 About Us
             </div>
         </a>
-        <a href="/events/" class="grid-item">
+        <a href="/threads-events/" class="grid-item">
             <div class="grid-image">
                 <img src="static/images/dj-night-fixed.png" style="max-width: 100%;" />
             </div>

@@ -117,7 +117,11 @@ body {
     z-index: 2;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1526px){
+    .body{
+        background:url('/static/images/felicity-hero-large-mobile.png') no-repeat;
+        background-size: cover;
+    }
     .container {
         background-color: rgba(0,0,0,0.8);
     }

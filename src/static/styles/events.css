@@ -118,7 +118,7 @@ body {
     z-index: 2;
 }
 
-@media (max-width: 1526px){
+@media (max-width: 1100px){
     body{
         background: url('/static/images/felicity-hero-large-mobile.png') no-repeat;
         background-size: 100% auto;

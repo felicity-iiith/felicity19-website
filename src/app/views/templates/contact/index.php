@@ -141,8 +141,8 @@
                 </div>
                 <div class="details">
                     <p class="name">Oishika Pradhan</p>
-                    <a href="#">oishika.pradhan@research.iiit.ac.in</a>
-                    <p class="number">(+91) 98765-43210 </p>
+                    <a href="#">oishika.pradhan@felicity.iiit.ac.in</a>
+                    <p class="number">(+91) 8910643173 </p>
                 </div>
             </div>
             <div class="fc">
@@ -151,8 +151,8 @@
                 </div>
                 <div class="details">
                     <p class="name">Aamir Farhan</p>
-                    <a href="#">aamir.farhan@research.iiit.ac.in</a>
-                    <p class="number">(+91) 98765-43210 </p>
+                    <a href="#">aamir.farhan@felicity.iiit.ac.in</a>
+                    <p class="number">(+91) 946051640 </p>
                 </div>
             </div>
             <div class="fc">
@@ -161,8 +161,8 @@
                 </div>
                 <div class="details">   
                     <p class="name">Saikiran Lade</p>
-                    <a href="#">saikiran.lade@research.iiit.ac.in</a>
-                    <p class="number">(+91) 98765-43210 </p>
+                    <a href="#">saikiran.lade@felicity.iiit.ac.in</a>
+                    <p class="number">(+91) 7036119977 </p>
                 </div>
             </div>
         </div>

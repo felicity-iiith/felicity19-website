@@ -62,7 +62,7 @@ body {
     height: 70vh;
     margin-top: 4vh;
     font-size: 2.5rem;
-        width: 70vh;
+    width: 70vh;
     background: url('/static/images/projector.png');
 }
 
@@ -118,9 +118,9 @@ body {
 }
 
 @media (max-width: 1526px){
-    .body{
-        background:url('/static/images/felicity-hero-large-mobile.png') no-repeat;
-        background-size: cover;
+    body{
+        background: url('/static/images/felicity-hero-large-mobile.png') no-repeat;
+        background-size: 100% auto;
     }
     .container {
         background-color: rgba(0,0,0,0.8);

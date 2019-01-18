@@ -1,81 +1,191 @@
-<?php $this->load_fragment('skeleton_template/header', ['title' => __('Contact Us')]); ?>
-<article class="page contact">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Exo', sans-serif;
+    }
+    body{
+        background: url('/static/images/felicity hero large.png') no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 95vw;
+        height: 85vh;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        overflow: auto;
+        transform: translate(-50%,-50%);
+        /* background-color: rgba(0,0,0,0.7); */
+        background-color: rgba(0,0,0,0.9);
+        color: white;
+    }
+    .coordinators{
+        height: 40%;
+        width: 100%;
+        margin-top: 10vh;
+        padding: 0vh 6vw;
+    }
+    .fc{
+        height: 90%;
+        display: inline-block;
+        width: 33%;
+        background-color: rgba(255,255,255,0.9);
+        box-shadow: 2vw 2vw 4vw 9vw blue;
+        clip-path: polygon(10% 0,100% 0,90% 100%,0 100%);
+    }
+    .image {
+        height: 50%;
+        text-align: center;
+    }
+    .image img{
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .details{
+        /* background-color: red; */
+        height: 50%;
+        color: black;
+        text-align: center;
+        transform: translateX(-10px);
+        font-size: 1.3rem;
+    }
+    .details * {
+        margin: 0.5vh;
+    }
+    .details a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
+    .social {
+        height: 47%;
+        /* background-color: red; */
+    }
+    .reach{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+        width: 100%;
+        height: 50%;
+        font-size: 4rem;
+    }
+    .social-logos{
+        text-align: center;
+        padding: 5vh 0;
+    }
+    .social-img{
+        display: inline-block;
+        height: 10vh;
+        padding: 0 2vh;
+        /* transform: scale(0.5,0.5); */
+    }
+    .social-img img{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+    }
+    .social-img img:hover{
+        transform: scale(1.4)
+    }
+    .avengers {
+        position: absolute;
+        bottom: 0rem;
+        transform: scale(0.6);
+        transform-origin: bottom left;
+        left: 0rem;
+    }
+    @media(max-width:600px){
+        body{
+            background: url('/static/images/felicity-hero-large-mobile.png') no-repeat;
+            background-size: cover;
+        }
+        .coordinators{
+            height: 100%;
+        }
+        .details{
+            font-size: 1rem;
+        }
+        .fc{
+            display: inline-block;
+            width: 100%;
+            height: 31%;
+            margin: 2vh 0;
+        }
+        .reach {
+            font-size: 2em;
+            text-align: center;
+            margin: 6vh 0 0 0;
+        }
+    }
+</style>
+<body>
     <div class="container">
-        <!--<header>
-            <h1>Contact<span class="tabheading"> Us</span></h1>
-        </header>-->
-        <p>
-            <?= __('There are many ways of contacting us.') ?>
-        </p>
-        <p>
-            <?= sprintf(__('You may email us at %s'), '<a target="_blank" class="underlined" href="mailto:contact@felicity.iiit.ac.in">contact@felicity.iiit.ac.in</a>') ?>
-        </p>
-        <p>
-            <?= __('Or bug our coordinators') ?>
-        </p>
-        <div class="row text-center">
-            <div class="col4">
-                <p>
-                    <?= __('Apaar Agrawal') ?>
-                    <a target="_blank" href="https://www.facebook.com/apaar.agrawal.3">
-                        <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
-                    </a>
-                </p>
-                <p>
-                    <a target="_blank" class="underlined" href="mailto:apaar@felicity.iiit.ac.in">apaar@felicity.iiit.ac.in</a>
-                </p>
-                <p>(+91) 9515409221</p>
+        <div class="coordinators">
+            <div class="fc">
+                <div class="image">
+                    <img src="/static/images/oishika.png">
+                </div>
+                <div class="details">
+                    <p class="name">Oishika Pradhan</p>
+                    <a href="#">oishika.pradhan@research.iiit.ac.in</a>
+                    <p class="number">(+91) 98765-43210 </p>
+                </div>
             </div>
-            <div class="col4">
-                <p>
-                    <?= __('Himakar Yv') ?>
-                    <a target="_blank" href="https://www.facebook.com/himakar.yv">
-                        <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
-                    </a>
-                </p>
-                <p> 
-                    <a target="_blank" class="underlined" href="mailto:himakar@felicity.iiit.ac.in">himakar@felicity.iiit.ac.in</a>
-                </p>
-                <p>(+91) 7799013690</p>
+            <div class="fc">
+                <div class="image">
+                    <img src="/static/images/aamir.png">
+                </div>
+                <div class="details">
+                    <p class="name">Aamir Farhan</p>
+                    <a href="#">aamir.farhan@research.iiit.ac.in</a>
+                    <p class="number">(+91) 98765-43210 </p>
+                </div>
             </div>
-            <div class="col4">
-                <p>
-                    <?= __('Parth Shrivastava') ?>
-                    <a target="_blank" href="https://www.facebook.com/parth20shri">
-                        <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
-                    </a>
-                </p>
-                <p>
-                    <a target="_blank" class="underlined" href="mailto:parth@felicity.iiit.ac.in">parth@felicity.iiit.ac.in</a>
-                </p>
-                <p>(+91) 8142657575</p>
+            <div class="fc">
+                <div class="image">
+                    <img src="/static/images/saikiran.png">
+                </div>
+                <div class="details">   
+                    <p class="name">Saikiran Lade</p>
+                    <a href="#">saikiran.lade@research.iiit.ac.in</a>
+                    <p class="number">(+91) 98765-43210 </p>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="reach">
+                Reach us at our social media handles!
+            </div>
+            <div class="social-logos">
+                <div class="social-img">
+                    <a href="https://www.facebook.com/felicity.iiith/"><img src="/static/images/facebook.png"></a>    
+                </div>       
+                <div class="social-img">
+                    <a href="https://www.instagram.com/felicity.iiith/"><img src="/static/images/instagram.png"></a>
+                </div>
+                <div class="social-img">
+                    <a href="https://www.youtube.com/channel/UC_1vMv4Al_96QgYzkFjh99w"><img src="/static/images/youtube.png"></a>
+                </div>
+            </div>
+            <div class="avengers">
+                <a href="/"><img src="/static/images/avengers-logo.png"></a>
             </div>
         </div>
     </div>
-    <table style="margin: 0 auto; margin-top: 5%;">
-    <tr>
-    <td>
-      <button class="toggle-contact fb-btn" onclick="window.open('https://www.facebook.com/felicity.iiith/')">
-        <i class="icon-facebook"></i>
-      </button>
-      </td><td>
-      <button class="toggle-contact youtube-btn" onclick="window.open('https://www.youtube.com/channel/UC_1vMv4Al_96QgYzkFjh99w/')">
-        <i class="icon-youtube"></i>
-      </button>
-      </td><td>
-      <button class="toggle-contact instagram-btn" onclick="window.open('https://www.instagram.com/felicity.iiith/')">
-        <i class="icon-instagram"></i>
-      </button>
-      </td>
-      </tr>
-    </table>
-</article>
-<?php $this->load_fragment('skeleton_template/footer'); ?>
-<?php if (!$is_ajax): ?>
-<script>
-    (function() {
-        $('#toggle').removeClass('i');
-        $('.btn-box').css('display', 'none');
-    })();
-</script>
-<?php endif; ?>
+    
+</body>
+</html>

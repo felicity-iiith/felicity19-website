@@ -101,11 +101,11 @@
                <div class="panels">
                     <div class="film-pic">FIFA<br />
                     9AM - 7PM,<br />
-                    Every day
+                    19-20th January
                     </div>                   
                     <div class="film-pic">CS:GO<br />
                     9AM - 7PM,<br />
-                    Every day
+                    19-20th January
                     </div>                   
                     <div class="film-pic">
                         PUB-G<br />

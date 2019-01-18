@@ -259,6 +259,6 @@ body {
             </div> 
         </div>
     </div>
-    <a href="/"><img class="/static/images/avengers-logo" src="avengers-logo.png"></a>
+    <a href="/"><img class="avengers-logo" src="/static/images/avengers-logo.png"></a>
 </body>
 </html>

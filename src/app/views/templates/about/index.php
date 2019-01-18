@@ -66,7 +66,11 @@ body {
             </a>
         </div>
         <div class="content">
-        <?= __($about_us) ?>
+            Felicity is back with a bang! This year, Felicity, the annual techno-cultural
+fest of IIIT Hyderabad is celebrating "Superheroes" from 19th January to 21st
+January 2019. One year has passed since we took you around the world
+and now here we are, locked, loaded, fully ready and excited to take you
+through an amazing journey through the world of your favorite superheroes.
         </div>
     </div>
 </body> 

@@ -59,9 +59,11 @@ body {
             <div class="nav-bar nav-bar-active">
                 About Us
             </div>
+            <a href="/contact/">
             <div class="nav-bar nav-bar-link">
                 Team
-            </div>  
+            </div>
+            </a>
         </div>
         <div class="content">
         <?= __($about_us) ?>

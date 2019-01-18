@@ -99,7 +99,7 @@
                     <div class="white-box"></div>
                </div>
                <div class="panels">
-                    <div class="film-pic">
+                    <div class="film-pic" data-popuptext="Testin 123">
                         Codecraft,<br />
                         TBA
                     </div>                   

@@ -33,7 +33,7 @@
                         <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
                     </a>
                 </p>
-                <p>
+                <p> 
                     <a target="_blank" class="underlined" href="mailto:himakar@felicity.iiit.ac.in">himakar@felicity.iiit.ac.in</a>
                 </p>
                 <p>(+91) 7799013690</p>

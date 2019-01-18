@@ -109,7 +109,8 @@
                     </div>                   
                     <div class="film-pic">
                     </div>                   
-                    <div class="film-pic"></div>                   
+                    <div class="film-pic">
+                    </div>                   
                </div>              
                <div class="boxes">
                     <div class="white-box"></div>

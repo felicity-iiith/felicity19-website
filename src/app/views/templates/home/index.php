@@ -18,6 +18,7 @@
         body {
             font-family: 'Exo', sans-serif;
             background: url('/static/images/felicity hero large.png') no-repeat;
+            background-size: cover;
         }
 
         a {
@@ -60,6 +61,34 @@
             height: 100%;
 
         }
+        @media(max-width:570px){
+            body {
+                background: url("/static/images/felicity-hero-large-mobile.png") no-repeat;
+            }
+            .container {
+                position: relative;
+            }
+            .grid-item {
+                display: block;
+                margin: 6.5vh auto;
+                clip-path: polygon(0 0,90% 0, 100% 10%,100% 100%, 0 100%);
+                height: 12.5vh;
+                width: 50%;
+            }
+            .grid-image{
+                display: inline-block;
+                width: 40%;
+            }
+            .grid-content{
+                display: inline-block;
+                vertical-align: top;
+                background-color: black;
+                text-align: center;
+                height: 10%;
+                width: 55%;
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -95,7 +124,7 @@
                 Gallery
             </div>
         </div>
-        <div class="grid-item">
+        <a href="/sponsors-2019/" class="grid-item">
             <div class="grid-image">
                 <img src="static/images/sponsors-ot-fixed.png" style="max-width: 100%;" />
             </div>
@@ -104,8 +133,8 @@
                 <br />
                 Sponsors
             </div>
-        </div>
-        <div class="grid-item">
+        </a>
+        <a href="/contact/" class="grid-item">
             <div class="grid-image">
                 <img src="static/images/contact us cropped.png" style="max-width: 100%;" />
             </div>
@@ -114,7 +143,7 @@
                 <br />
                 Contact
             </div>
-        </div>
+        </a>
     </div>
 </body>
 </html>

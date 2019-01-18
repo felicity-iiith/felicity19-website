@@ -1,0 +1,18 @@
+{
+    "about_us": {
+        "name"      : "About us",
+        "type"      : "longtext",
+        "default"   : "Felicity is the annual techno-cultural fest of IIIT-H."
+    },
+    "events_data": {
+        "name"      : "Events list",
+        "inApi"     : false,
+        "type"      : "external",
+        "path"      : ".*/.*",
+        "template"  : "(category|event)",
+        "data"      : {
+            "name"          : "name",
+            "icon"          : "nav_icon"
+        }
+    }
+}
